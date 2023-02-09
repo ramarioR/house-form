@@ -73,7 +73,7 @@ inputs.forEach(input => {
 
 })
 
-document.addEventListener('submit', async e => {
+document.addEventListener('submit', e => {
     e.preventDefault();
     let isNotValidation = false;
 
@@ -83,7 +83,7 @@ document.addEventListener('submit', async e => {
 
     if (isNotValidation) return;
 
-    await fetch('/mailer', {
+    fetch('/mailer', {
         method: "POST",
         body: new FormData(e.target)
     }).then(res => {
