@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/main.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <form class="form" action="#" method="POST" novalidate>
+        <h1 class="form__title">Обратная форма</h1>
+        <div class="form__inputs">
+            <div class="form__row">
+                <label class="form__input input_wrapper" data-input-wrapper="">
+                    <input class="input_wrapper__input" type="text" name="name" autocomplete="off" required data-input="">
+                    <span class="input_wrapper__label">ФИО</span>
+                </label>
+                <label class="form__input input_wrapper" data-input-wrapper="">
+                    <input class="input_wrapper__input" type="tel" name="phone" autocomplete="off" required data-input="">
+                    <span class="input_wrapper__label">Телефон</span>
+                </label>
+            </div>
+            <div class="form__row">
+                <label class="form__input input_wrapper" data-input-wrapper="">
+                    <input class="input_wrapper__input" type="email" name="email"autocomplete="off" data-input="">
+                    <span class="input_wrapper__label">E-mail</span>
+                </label>
+            </div>
+            <div class="form__row">
+                <label class="form__input input_wrapper input_wrapper--textarea" data-input-wrapper="">
+                    <textarea class="input_wrapper__input" type="text" name="text" data-input=""></textarea>
+                    <span class="input_wrapper__label">Сообщение</span>
+                </label>
+            </div>
+        </div>
+        <p class="form__privacy">Отправляя форму, Вы соглашаетесь на <a class="link" href="#">обработку персональных данных</a></p>
+        <button class="form__btn btn">Отправить</button>
+    </form>
+
+    <script src="https://unpkg.com/imask"></script>
+    <script type="text/javascript" src="./app.js"></script>
+</body>
+</html>
